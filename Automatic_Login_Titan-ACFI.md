@@ -1,6 +1,6 @@
 ## Automatic Login
 
-Logging into our local machine first and then titan from there can get annoying after a little while with all the typing. In order to simplify the process somewhat, you can setup an automatic logins. To do this, open a terminal on your local machine and cd into your  **~/.ssh**  folder. Here, you can create a public/private rsa key pair by typing
+Logging into our local machine first and then Titan from there can get annoying after a little while with all the typing. In order to simplify the process somewhat, you can setup an automatic logins. To do this, open a terminal on your local machine and cd into your  **~/.ssh**  folder. Here, you can create a public/private rsa key pair by typing
 
 ```console
 $ ssh-keygen -t rsa
