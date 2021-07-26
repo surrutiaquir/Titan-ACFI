@@ -3,6 +3,7 @@
 Logging into our local machine first and then Titan from there can get annoying after a little while with all the typing. In order to simplify the process somewhat, you can setup an automatic logins. To do this, open a terminal on your local machine and cd into your  **~/.ssh**  folder. Here, you can create a public/private rsa key pair by typing
 
 ```console
+$ cd ~/.ssh
 $ ssh-keygen -t rsa
 ```
 
@@ -52,7 +53,7 @@ $ cat ~/.ssh/id_rsa_umass.pub | ssh titan@128.119.50.175 'cat >> .ssh/authorized
 using the password when prompted. We can now further simplify the step into Titan by adding the following lines to the  **config**  file in the  **~/.ssh**  folder
 
 ```console
-Host titan
+Host username
         User username
         Hostname titan.physics.umass.edu
 ```
@@ -62,13 +63,13 @@ with  **username**  replaced with your chosen Titan username.
 If you now start a new terminal on your local machine, you should be able to simply type
 
 ```console
-$ ssh everybody
+$ ssh titan-acfi
 ```
 
 to get into our local machine without a password from your computer. Once there, you should be to type
 
 ```console
-$ ssh titan
+$ ssh username
 ```
 
 to log into Titan, after you insert your Titan password when prompted.
